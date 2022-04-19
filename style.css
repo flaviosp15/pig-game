@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #ac2e73, #b220ba);
+  font-family: 'Varela Round', sans-serif;
+  color: #464646;
+}
+
+/* ================================ MAIN CONTENT ================================ */
+.container {
+  display: flex;
+  width: 73%;
+  height: 95%;
+  box-shadow: 3px 3px 80px #3f3f3f;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.box-player0,
+.box-player1,
+.box-top,
+.box-bottom {
+  position: relative;
+}
+.box-top {
+  height: 50%;
+  margin: 5.8rem 0 0 0;
+}
+.box-player0,
+.box-player1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 50%;
+  text-align: center;
+  background-color: #eeeeee5d;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+.box-player0 {
+  border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+}
+.box-player1 {
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+}
+.player,
+.score,
+.box-accumulate > span:first-child,
+.box-accumulate > .accumulate-score {
+  display: block;
+}
+.player {
+  color: #464646b8;
+  margin-bottom: 1.4rem;
+  font-size: 2.5rem;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+.score {
+  font-size: 5rem;
+  transition: color 0.5s;
+  color: #ac2e73b6;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+.box-bottom {
+  height: fit-content;
+}
+.box-accumulate,
+.score {
+  font-weight: 400;
+}
+.box-accumulate {
+  width: 13rem;
+  height: 7.4rem;
+  background-color: #ac2e7388;
+  color: #eeeeeea4;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1.2rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -moz-transition: background-color 0.5s, color 0.5s;
+  -ms-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+}
+.box-accumulate > span:first-child {
+  font-size: 1.2rem;
+  margin-bottom: 0.9rem;
+}
+.box-accumulate > .accumulate-score {
+  font-size: 2.1rem;
+}
+
+/* ================================ WON THE GAME ================================ */
+.container > .won {
+  background-color: #272727;
+}
+.won > .box-top > .player {
+  color: #ac2e73;
+}
+
+/* ================================ BUTTONS ================================ */
+.btn {
+  position: absolute;
+  width: 11.5rem;
+  padding: 0.8rem;
+  border: none;
+  font-size: 1.1rem;
+  color: #464646;
+  box-shadow: 0 15px 10px #54545421;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+}
+.new-game {
+  transform: translate(50%, -120%);
+  -webkit-transform: translate(50%, -120%);
+  -moz-transform: translate(50%, -120%);
+  -ms-transform: translate(50%, -120%);
+  -o-transform: translate(50%, -120%);
+  transition: transform 0.3s, box-shadow 0.3s;
+  -webkit-transition: transform 0.3s, box-shadow 0.3s;
+  -moz-transition: transform 0.3s, box-shadow 0.3s;
+  -ms-transition: transform 0.3s, box-shadow 0.3s;
+  -o-transition: transform 0.3s, box-shadow 0.3s;
+}
+.new-game,
+.roll-dice {
+  top: 0;
+}
+.new-game,
+.roll-dice,
+.hold {
+  right: 0;
+}
+.roll-dice,
+.hold {
+  transform: translate(50%);
+  -webkit-transform: translate(50%);
+  -moz-transform: translate(50%);
+  -ms-transform: translate(50%);
+  -o-transform: translate(50%);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hold {
+  width: 8.5rem;
+  bottom: 0;
+}
+.roll-dice:active,
+.hold:active {
+  box-shadow: 0 10px 5px #5454542f;
+  transform: translate(50%, 5%);
+  -webkit-transform: translate(50%, 5%);
+  -moz-transform: translate(50%, 5%);
+  -ms-transform: translate(50%, 5%);
+  -o-transform: translate(50%, 5%);
+}
+.new-game:active {
+  box-shadow: 0 10px 5px #5454542f;
+  transform: translate(50%, -115%);
+  -webkit-transform: translate(50%, -115%);
+  -moz-transform: translate(50%, -115%);
+  -ms-transform: translate(50%, -115%);
+  -o-transform: translate(50%, -115%);
+}
+.btn:hover:disabled {
+  color: #464646;
+}
+.hold:disabled,
+.roll-dice:disabled {
+  cursor: not-allowed;
+  background-color: #eee;
+}
+
+/* ================================ ACTIVE MODE ================================ */
+.active {
+  font-weight: 600;
+  background-color: #eeeeeeab;
+}
+.active > div:first-child > .score {
+  color: #ac2e73;
+}
+.active > div:nth-child(2) > .box-accumulate {
+  background-color: #ac2e73;
+}
+.active > div:nth-child(2) > .box-accumulate > * {
+  color: #eee;
+}
+
+/* ================================ DICE ================================ */
+.dice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  width: 6rem;
+  height: 6rem;
+  background-color: #eee;
+  transform: translate(50%, 73%);
+  -webkit-transform: translate(50%, 73%);
+  -moz-transform: translate(50%, 73%);
+  -ms-transform: translate(50%, 73%);
+  -o-transform: translate(50%, 73%);
+  z-index: 2;
+  box-shadow: 5px 10px 60px #212121b8;
+}
+.bx {
+  font-size: 9rem;
+  color: #ac2e73;
+}
+.hidden {
+  display: none;
+}
