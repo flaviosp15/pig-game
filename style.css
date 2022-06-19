@@ -285,7 +285,7 @@ body {
     -o-transform: translateX(0);
   }
   .new-game {
-    left: 30px;
+    left: 20px;
   }
   .roll-dice {
     left: 50%;
@@ -297,7 +297,7 @@ body {
   }
   .hold {
     left: initial;
-    right: 30px;
+    right: 20px;
   }
   .btn {
     top: 4px;
@@ -321,8 +321,8 @@ body {
 }
 @media (max-width: 450px) {
   .btn {
-    padding: 0.3rem;
-    width: 5rem;
-    font-size: 0.55rem;
+    padding: 0.5rem;
+    width: 5.7rem;
+    font-size: 0.66rem;
   }
 }
