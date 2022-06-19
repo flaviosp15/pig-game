@@ -17,6 +17,15 @@ const enabledBtn = function () {
   btnRollDice.disabled = false;
   btnHold.disabled = false;
 };
+const smoothScrollEffect = function () {
+  if (window.innerWidth <= 580) {
+    const to = document.querySelector(`.active`).offsetTop;
+    window.scroll({
+      top: to,
+      behavior: 'smooth',
+    });
+  }
+};
 const switchPlayer = function () {
   document
     .querySelector(`.box-player${activePlayer}`)
@@ -69,6 +78,7 @@ const startNewGame = function () {
       .querySelector(`.box-player${activePlayer}`)
       .classList.add('active');
   }
+  smoothScrollEffect();
 };
 startNewGame();
 
@@ -81,6 +91,7 @@ btnRollDice.addEventListener('click', function () {
     addCurrentScore(randomNumber);
   } else {
     switchPlayer();
+    smoothScrollEffect();
   }
 });
 
@@ -88,9 +99,11 @@ btnHold.addEventListener('click', function () {
   if (activePlayer === 1) {
     addTotalScore();
     winTheGame();
+    smoothScrollEffect();
   } else {
     addTotalScore();
     winTheGame();
+    smoothScrollEffect();
   }
 });
 

@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>PROJECT: Pig Game</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="box-player box-player0 active">
-        <div class="box-top">
-          <div class="dice hidden">
-            <i class="bx"></i>
-          </div>
-          <button class="btn new-game" type="button">&#x1F501; NEW GAME</button>
-          <span class="player player0">PLAYER 1</span>
-          <span class="score score-player0">0</span>
-        </div>
-        <div class="box-bottom">
-          <button class="btn roll-dice" type="button">
-            &#x1F3B2; ROLL DICE
-          </button>
-          <button class="btn hold" type="button">&#x1F4E5; HOLD</button>
-          <div class="box-accumulate">
-            <span>CURRENT</span>
-            <span class="accumulate-score accumulate-score-player0">0</span>
-          </div>
-        </div>
-      </div>
-      <div class="box-player box-player1">
-        <div class="box-top">
-          <span class="player player1">PLAYER 2</span>
-          <span class="score score-player1">0</span>
-        </div>
-        <div class="box-bottom">
-          <div class="box-accumulate">
-            <span>CURRENT</span>
-            <span class="accumulate-score accumulate-score-player1">0</span>
-          </div>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+  <title>PROJECT: Pig Game</title>
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn new-game" type="button">&#x1F501; NEW GAME</button>
+    <button class="btn hold" type="button">&#x1F4E5; HOLD</button>
+    <button class="btn roll-dice" type="button">&#x1F3B2; ROLL DICE</button>
+    <div class="dice hidden">
+      <i class="bx"></i>
+    </div>
+    <div class="box-player box-player0 active">
+      <span class="player player0">PLAYER 1</span>
+      <span class="score score-player0">0</span>
+      <div class="box-accumulate">
+        <span>CURRENT</span>
+        <span class="accumulate-score accumulate-score-player0">0</span>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+    <div class="box-player box-player1">
+      <span class="player player1">PLAYER 2</span>
+      <span class="score score-player1">0</span>
+      <div class="box-accumulate">
+        <span>CURRENT</span>
+        <span class="accumulate-score accumulate-score-player1">0</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
