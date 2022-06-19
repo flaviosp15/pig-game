@@ -322,11 +322,11 @@ body {
 @media (max-width: 450px) {
   .box-player0,
   .box-player1 {
-    padding: 2.5rem 0;
+    padding: 2rem 0;
   }
   .btn {
-    padding: 0.5rem;
+    padding: 0.48rem;
     width: 5.7rem;
-    font-size: 0.63rem;
+    font-size: 0.6rem;
   }
 }
