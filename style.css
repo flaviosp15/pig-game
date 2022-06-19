@@ -320,6 +320,10 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .box-player0,
+  .box-player1 {
+    padding: 2.5rem 0;
+  }
   .btn {
     padding: 0.5rem;
     width: 5.7rem;
