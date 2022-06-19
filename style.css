@@ -306,10 +306,14 @@ body {
     top: 6px;
   }
   .dice {
-    position: fixed;
-    top: 425px;
+    top: 50%;
     width: 3rem;
     height: 3rem;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
   }
   .bx {
     font-size: 5rem;
