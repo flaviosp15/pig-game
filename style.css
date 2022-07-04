@@ -9,7 +9,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   padding: 1rem;
   background: linear-gradient(90deg, #ac2e73, #b220ba);
   font-family: 'Varela Round', sans-serif;
