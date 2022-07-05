@@ -10,6 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  min-height: 100vh;
   background: linear-gradient(90deg, #ac2e73, #b220ba);
   font-family: 'Varela Round', sans-serif;
   color: #464646;
@@ -303,14 +304,14 @@ body {
     right: 20px;
   }
   .btn {
-    top: 4px;
+    top: 85%;
   }
   .btn:active {
-    top: 6px;
+    top: 85.5%;
   }
   .dice {
     position: fixed;
-    top: 85%;
+    top: 70%;
     width: 3rem;
     height: 3rem;
   }
